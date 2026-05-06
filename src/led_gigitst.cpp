@@ -148,7 +148,11 @@ void setupWiFiManager() {
   WiFiManager wm;
 
   // Uncomment to reset saved credentials (useful for debugging)
+  //WiFi.disconnect(true); 
+  //WiFi.persistent(false);
   //wm.resetSettings();
+  //ESP.eraseConfig();
+  
 
   // Custom parameters
   WiFiManagerParameter mqttBrokerParam("broker", "MQTT Broker",
